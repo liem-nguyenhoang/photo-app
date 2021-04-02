@@ -33,7 +33,6 @@ function PhotoForm(props) {
         })
     });
 
-    // npm i --save react-select
     return (
         <Formik
             initialValues={initialValues}
@@ -41,7 +40,6 @@ function PhotoForm(props) {
             onSubmit={props.onSubmit}
         >
             {formikProps => {
-                // do something here ...
                 const { values, errors, touched, isSubmitting } = formikProps;
                 console.log({ values, errors, touched });
 
